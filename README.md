@@ -18,7 +18,7 @@ See [Installing Modules](http://docs.deployd.com/docs/using-modules/installing-m
 
 ### Usage
 
-Use [dpd-dashboard](https://www.npmjs.org/package/dpd-startup) to add a **Start-up Module**. The name doesn't matter and you can have as many as you need.
+Use [dpd-dashboard](https://www.npmjs.org/package/dpd-startup) to add a **Start-up Module**. The name doesn't matter and you can have as many as you need. 
 
 You can write your startup code inside the `Index` event. The code will be run on startup. You will have access to the `dpd` object like in any other event script.
 
@@ -27,3 +27,5 @@ You can write your startup code inside the `Index` event. The code will be run o
 The code will also be re-run every time you save the script if you're using [dpd-dashboard](https://www.npmjs.org/package/dpd-startup). 
 
 So, make sure your startup logic is valid for this purpose. Otherwise, restart your project manually every time, or do not edit the script using `dpd-dashboard`.
+
+The order the startup scripts are ran in is not guaranteed. If you need a particular order, and would like to split your startup script into smaller parts, you can combine this with [dpd-codemodule](https://www.npmjs.org/package/dpd-codemodule) and write your logic inside **Code Resources**, which you can then use from your **startup module**.
