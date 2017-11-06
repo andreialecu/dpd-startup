@@ -1,4 +1,4 @@
-## Code Resource for deployd
+## Start-up Code Resource for deployd
 
 [![Current Version](https://img.shields.io/npm/v/dpd-startup.svg?style=flat-square)](https://www.npmjs.org/package/dpd-startup)
 
@@ -8,11 +8,11 @@ It is useful for setting up Pub/sub job processors, to schedule things that shou
 
 ### Installation
 
-`npm install dpd-codemodule --save`
+`npm install dpd-startup --save`
 
 or
 
-`yarn add dpd-codemodule`
+`yarn add dpd-startup`
 
 See [Installing Modules](http://docs.deployd.com/docs/using-modules/installing-modules.md) for details.
 
