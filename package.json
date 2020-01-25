@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Deployd module to create event scripts that are run on startup, after deployd starts your project, regardless of any requests coming in.",
   "main": "index.js",
-  "dependencies": {
+  "peerDependencies": {
     "deployd": "^1.0.0"
   },
   "repository": {
